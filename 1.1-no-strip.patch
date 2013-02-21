@@ -1,0 +1,15 @@
+--- origsrc/crypt-1.1-1/Makefile	2013-02-17 16:14:57.817843500 -0600
++++ src/crypt-1.1-1/Makefile	2013-02-17 16:17:14.142640800 -0600
+@@ -42,10 +42,10 @@ install: all
+ 	install -d $(DESTDIR)$(libdir)
+ 	install -d $(DESTDIR)$(incdir)
+ 	install -d $(DESTDIR)$(docdir)
+-	install -m 755 -s $(APPS)      $(DESTDIR)$(bindir)
++	install -m 755 $(APPS)         $(DESTDIR)$(bindir)
+ 	install -m 644 encrypt.h       $(DESTDIR)$(incdir)/crypt.h
+ 	install -m 644 $(STATICLIB)    $(DESTDIR)$(libdir)
+ 	install -m 644 $(IMPORTLIB)    $(DESTDIR)$(libdir)
+-	install -m 755 -s $(SHAREDLIB) $(DESTDIR)$(bindir)
++	install -m 755 $(SHAREDLIB)    $(DESTDIR)$(bindir)
+ 	install -m 644 crypt.README    $(DESTDIR)$(docdir)
+ 
