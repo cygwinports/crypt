@@ -14,6 +14,11 @@ HOMEPAGE="http://cygwin.com/"
 
 PATCH_URI="1.1-cross-AR.patch  1.1-no-strip.patch"
 
+PKG_NAMES="crypt libcrypt0 libcrypt-devel"
+crypt_CONTENTS="usr/bin/crypt.exe usr/share/doc/"
+libcrypt0_CONTENTS="usr/bin/cygcrypt-0.dll"
+libcrypt_devel_CONTENTS="usr/include/ usr/lib/"
+
 src_compile() {
 	lndirs
 	cd ${B}
