@@ -12,8 +12,6 @@ crypt(3), encrypt(3), and setkey(3).  The created passwords are 56 bit DES
 encrypted and are 100% identical to those created by the Linux crypt(3)."
 HOMEPAGE="http://cygwin.com/"
 
-PATCH_URI="1.1-cross-AR.patch  1.1-no-strip.patch"
-
 PKG_NAMES="crypt libcrypt0 libcrypt-devel"
 crypt_CONTENTS="usr/bin/crypt.exe usr/share/doc/"
 libcrypt0_CONTENTS="usr/bin/cygcrypt-0.dll"
