@@ -3,7 +3,7 @@ GIT_TAG="crypt-${PV//\./_}-release"
 inherit git
 
 NAME="crypt"
-VERSION=1.4
+VERSION=2.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Encryption/Decryption utility and library"
@@ -12,9 +12,9 @@ crypt(3), encrypt(3), and setkey(3).  The created passwords are 56 bit DES
 encrypted and are 100% identical to those created by the Linux crypt(3)."
 HOMEPAGE="http://cygwin.com/"
 
-PKG_NAMES="crypt libcrypt0 libcrypt-devel"
-crypt_CONTENTS="usr/bin/crypt.exe usr/share/doc/"
-libcrypt0_CONTENTS="usr/bin/cygcrypt-0.dll"
+PKG_NAMES="libcrypt0 libcrypt-devel"
+libcrypt0_OBSOLETES="crypt"
+libcrypt0_CONTENTS="usr/bin/cygcrypt-0.dll usr/share/doc/"
 libcrypt_devel_CONTENTS="usr/include/ usr/lib/"
 
 src_compile() {
