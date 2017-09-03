@@ -3,7 +3,7 @@ GIT_TAG="crypt-${PV//\./_}-release"
 inherit git
 
 NAME="crypt"
-VERSION=2.0
+VERSION=2.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Encryption/Decryption utility and library"
